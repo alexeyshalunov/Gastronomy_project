@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>Gastronomy Project (Alexey Shalunov)</title>
+	<style type="text/css">
+		/* page styles */
+		body {
+			font-family: 'Arial', sans-serif;
+			font-size: 14px;
+			color: #3c3c3c;
+			padding-top: 40px;
+		}
+
+		.wrapper {
+			min-width: 600px;
+			max-width: 768px;
+			text-align: center;
+		}
+
+		.module {
+			border: 2px solid #e61331;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+
+		.component {
+			border: 1px solid #2a58c2;
+			padding: 15px;
+			border-radius: 3px;
+			display: inline-block;
+		}
+
+		.component + .component {
+			margin-left: 10px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-weight: 700;
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 25px;
+			line-height: 1em;
+			text-transform: uppercase;
+			padding: 15px;
+		}
+
+		h2 {
+			font-size: 20px;
+			line-height: 1em;
+			padding: 15px;
+		}
+
+		h3 {
+			font-size: 16px;
+			line-height: 1em;
+			padding: 5px;
+			display: inline-block;
+		}
+
+		h4 {
+			font-size: 14px;
+			line-height: 1em;
+			padding: 5px 0;
+		}
+
+		.red {
+			color: #e61331;
+		}
+
+		.blue {
+			color: #2a58c2;
+		}
+
+		.divider {
+			height: 20PX;
+		}
+
+		.db {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="module wrapper">
+		<h1>APP</h1>
+		<header class="component header db">
+			<h2>Header</h2>
+			<div class="component">
+				Logo
+			</div>
+			<div class="component">
+				Address
+			</div>
+			<div class="component">
+				<h3>Auth</h3>
+				<div class="component">
+					Log In
+				</div>
+				<div class="component">
+					Log out
+				</div>
+			</div>
+		</header>
+		<div class="divider"></div>
+		<main class="main db">
+			<div class="module">
+				<h2>Menu</h2>
+				<div class="component">
+					<h3>Menu Categories</h3>
+					<div class="component">
+						<h3>Categorie title</h3>
+						<div class="component">
+							<h4>Dish</h4>
+							<div class="component">
+								Price
+							</div>
+							<div class="component">
+								Details
+							</div>
+							<div class="component">
+								Photo
+							</div>
+							<div class="component">
+								Add to Cart
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="component db">
+				<h2>Advertising</h2>
+				<div class="component">
+					Banner 1
+				</div>
+				<div class="component">
+					Banner 2
+				</div>
+			</div>			
+		</main>
+		<div class="divider"></div>
+		<footer class="component footer db">
+			<h2>Footer</h2>
+			<div class="component">
+				Address
+			</div>
+			<div class="component">
+				Copyright
+			</div>
+		</footer>
+	</div>
+	<div class="divider"></div>
+	<div class="legend">
+		<h4>Legend</h4>
+		<p><span class="red">Red Border</span> - Module<br><span class="blue">Blue Border</span> - Component</p>
+	</div>	
+</body>
+</html>
